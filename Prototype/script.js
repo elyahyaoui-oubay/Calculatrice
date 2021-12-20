@@ -59,9 +59,9 @@ function Afficher(number){
 }
 
 
-function Operation(operationPara){
+function Operation(operationParam){
     if(operation == undefined){
-        operation = operationPara;
+        operation = operationParam;
         num1 = parseFloat(num1ChaineCa);
         Afficher();
     }else{
