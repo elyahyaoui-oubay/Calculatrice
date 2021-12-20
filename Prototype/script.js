@@ -1,10 +1,10 @@
 // Déclaration des variables
 let num1,num2,solution,operation;
-let num1String, num2String;
+let num1ChaineCa, num2ChaineCa;
 
 // saisie
-num1String = '';
-num2String = '';
+num1ChaineCa = '';
+num2ChaineCa = '';
 
 // Métier
 function Calculer(num1,num2,operation){
@@ -26,12 +26,12 @@ function Calculer(num1,num2,operation){
 // Présentation
 function ClickNumber(number){
     if(num1 == undefined){
-        if(num1String == undefined) ;
-        num1String += number;
+        if(num1ChaineCa == undefined) ;
+        num1ChaineCa += number;
     } 
     else {
-        if(num2String == undefined) ;
-        num2String += number;
+        if(num2ChaineCa == undefined) ;
+        num2ChaineCa += number;
     } 
 
     Afficher();
@@ -46,12 +46,12 @@ function Afficher(number){
 
         afficheur.value = number;
     }else{
-        if(num1String != undefined)
-        afficheur.value += num1String 
+        if(num1ChaineCa != undefined)
+        afficheur.value += num1ChaineCa 
         if(operation != undefined)
             afficheur.value += operation     
-        if(num2String != undefined)
-            afficheur.value += num2String 
+        if(num2ChaineCa != undefined)
+            afficheur.value += num2ChaineCa 
 
         }
  
@@ -62,7 +62,7 @@ function Afficher(number){
 function Operation(operationParam){
     if(operation == undefined){
         operation = operationParam;
-        num1 = parseFloat(num1String);
+        num1 = parseFloat(num1ChaineCa);
         Afficher();
     }else{
         alert("Vous avez déjà choisi l'opération " + operation);
@@ -70,8 +70,8 @@ function Operation(operationParam){
 }
 
 function Egale(){
-    num1 = parseFloat(num1String);
-    num2 = parseFloat(num2String);
+    num1 = parseFloat(num1ChaineCa);
+    num2 = parseFloat(num2ChaineCa);
     solution = Calculer(num1,num2,operation);
     Afficher(solution);
 }
@@ -79,8 +79,8 @@ function Egale(){
 function Init(){
     num1 = undefined;
     num2 = undefined;
-    num1String = undefined;
-    num2String = undefined;
+    num1ChaineCa = undefined;
+    num2ChaineCa = undefined;
     operation = undefined;
     let afficheur = document.getElementyId("afficheur");
     
