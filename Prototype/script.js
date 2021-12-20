@@ -6,7 +6,7 @@ let num1ChaineCa, num2ChaineCa;
 num1ChaineCa = '';
 num2ChaineCa = '';
 
-// Métier
+// Profession
 function Calculer(num1,num2,operation){
     let _solution = undefined;
     switch (operation) {
@@ -59,9 +59,9 @@ function Afficher(number){
 }
 
 
-function Operation(operationParam){
+function Operation(operationPara){
     if(operation == undefined){
-        operation = operationParam;
+        operation = operationPara;
         num1 = parseFloat(num1ChaineCa);
         Afficher();
     }else{
@@ -82,7 +82,7 @@ function Init(){
     num1ChaineCa = undefined;
     num2ChaineCa = undefined;
     operation = undefined;
-    let afficheur = document.getElementyId("afficheur");
+    let afficheur = document.getElementById("afficheur");
     
     afficheur.value = "";
 }
