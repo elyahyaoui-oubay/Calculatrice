@@ -14,7 +14,6 @@ function Calculer(num1,num2,operation){
         case '-':
             _solution = num1-num2;
             break;
-        
     }
     return _solution;
 }
