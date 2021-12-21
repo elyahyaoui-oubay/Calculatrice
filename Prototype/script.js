@@ -1,5 +1,5 @@
 // Variables
-let num1,num2,solution,operation;
+let num1,num2,operation,solution;
 let num1ChaineCa, num2ChaineCa;
 
 
@@ -13,9 +13,8 @@ function Calculer(num1,num2,operation){
             break;
         case '-':
             _solution = num1-num2;
-                break;
-        default:
             break;
+        
     }
     return _solution;
 }
@@ -52,18 +51,13 @@ function Afficher(number){
             afficheur.value += num2ChaineCa 
 
         }
- 
-   
 }
-
 
 function Operation(operationParam){
     if(operation == undefined){
         operation = operationParam;
         num1 = parseFloat(num1ChaineCa);
         Afficher();
-    }else{
-        alert("Vous avez déjà choisi l'opération " + operation);
     }
 }
 
