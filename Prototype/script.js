@@ -20,7 +20,7 @@ function Calculer(num1,num2,operation){
 
 
 // Présentation
-function ClickNumber(number){
+function ClickNombre(number){
     if(num1 == undefined){
         if(num1ChaineCa == undefined) num1ChaineCa = '';
         num1ChaineCa += number;
