@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // Déclaration des variables
 let num1,num2,solution,operation;
 let num1ChaineCa, num2ChaineCa;
@@ -86,3 +87,14 @@ function Init(){
     
     afficheur.value = "";
 }
+=======
+let display = document.getElementById('display');
+
+let buttons =Array.from(document.getElementsByClassName('button'));
+
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        
+    })
+})
+>>>>>>> Stashed changes
