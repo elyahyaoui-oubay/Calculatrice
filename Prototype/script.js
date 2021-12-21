@@ -1,13 +1,10 @@
-<<<<<<< Updated upstream
-// Déclaration des variables
+// Variables
 let num1,num2,solution,operation;
 let num1ChaineCa, num2ChaineCa;
 
-// saisie
-num1ChaineCa = '';
-num2ChaineCa = '';
 
-// Profession
+
+// Métier
 function Calculer(num1,num2,operation){
     let _solution = undefined;
     switch (operation) {
@@ -27,11 +24,11 @@ function Calculer(num1,num2,operation){
 // Présentation
 function ClickNumber(number){
     if(num1 == undefined){
-        if(num1ChaineCa == undefined) ;
+        if(num1ChaineCa == undefined) num1ChaineCa = '';
         num1ChaineCa += number;
     } 
     else {
-        if(num2ChaineCa == undefined) ;
+        if(num2ChaineCa == undefined) num2ChaineCa = '';
         num2ChaineCa += number;
     } 
 
@@ -87,14 +84,3 @@ function Init(){
     
     afficheur.value = "";
 }
-=======
-let display = document.getElementById('display');
-
-let buttons =Array.from(document.getElementsByClassName('button'));
-
-buttons.map( button => {
-    button.addEventListener('click', (e) => {
-        
-    })
-})
->>>>>>> Stashed changes
