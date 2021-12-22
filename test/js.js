@@ -6,6 +6,8 @@ var operation;
 var num1;
 var num2;
 
+var total;
+
 
 
 function clickNombre(nombre){
@@ -26,6 +28,7 @@ function afficher(nombre){
         afficher.value = '';
 
         if (num1 != undefined && num2 != undefined && operation != undefined ){
+            afficher.value = nombre;
             }else{
                 if(num1ChaineCa != undefined ){
                     afficher.value += num1ChaineCa;
@@ -44,7 +47,7 @@ function afficher(nombre){
 
 function Operation(operationPara){
     if (operation == undefined){
-        operation = operationPara;
+        operation = operationPara
         num1 = parseFloat(num1ChaineCa);
     }
 
@@ -52,8 +55,8 @@ function Operation(operationPara){
 }
 
 function Egale(){
-    a = parseFloat(num1ChaineCa);
-    b = parseFloat(num2ChaineCa);
+    num1 = parseFloat(num1ChaineCa);
+    num2 = parseFloat(num2ChaineCa);
 
     total = somme(num1, num2, operation);
 
@@ -73,6 +76,8 @@ function somme(num1, num2, operation){
             _total = num1 - num2;
         break;
     }
+
+    return _total;
 }
 
 
