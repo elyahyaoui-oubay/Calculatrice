@@ -8,11 +8,15 @@ var total;
 
 
 function onClickNombre(nombre){
-    if(num1ChaineCa == undefined){
-        num1ChaineCa = nombre;
-    }else{
-        num2ChaineCa = nombre;
-    }
+    if(num1 == undefined){
+        if(num1ChaineCa == undefined) num1ChaineCa = '';
+        num1ChaineCa += nombre;
+    } 
+    else {
+        if(num2ChaineCa == undefined) num2ChaineCa = '';
+        num2ChaineCa += nombre;
+    } 
+
     afficher();
 }
 
