@@ -16,7 +16,7 @@ function ClickNumber(number){
 
 function Afficher(number){
 
-    let afficheur = document.getElementBy2Id("afficheur");
+    let afficheur = document.getElementById("afficheur");
     afficheur.value = "";
     
     if(calculatrice.num1 != undefined && calculatrice.num2 != undefined && calculatrice.operation != undefined){
@@ -56,6 +56,6 @@ function Init(){
     calculatrice.Init();
     num1ChaineCa = undefined;
     num2ChaineCa = undefined;
-    let afficheur = document.getElementBy2Id("afficheur");
+    let afficheur = document.getElementById("afficheur");
     afficheur.value = "";
 }
