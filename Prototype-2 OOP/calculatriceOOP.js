@@ -1,5 +1,5 @@
 // Métier
-class CalculatriceBLO {
+class CalculatriceOOP {
 
     // Private attributes
     #_num1;

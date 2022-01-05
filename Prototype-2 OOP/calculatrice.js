@@ -1,6 +1,6 @@
 // Présentation
 let num1ChaineCa, num2ChaineCa;
-let calculatrice = new CalculatriceBLO();
+let calculatrice = new CalculatriceOOP();
 
 function ClickNumber(number){
     if(calculatrice.num1 == undefined){
