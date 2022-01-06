@@ -32,17 +32,13 @@ function Afficher(number){
             afficheur.value += num2ChaineCa 
 
         }
- 
-   
-}
+ }
 
 function Operation(operationParam){
     if(calculatrice.operation == undefined){
         calculatrice.operation = operationParam;
         calculatrice.num1 = parseFloat(num1ChaineCa);
         Afficher();
-    }else{
-        alert("Vous avez déjà choisi l'opération " + calculatrice.operation);
     }
 }
 
